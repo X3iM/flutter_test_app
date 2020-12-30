@@ -5,16 +5,16 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_test_app/components/download_screen.dart';
 import 'package:flutter_test_app/components/geo_search_screen.dart';
 
-class BottomNavBar extends StatefulWidget {
+class MyApp extends StatefulWidget {
   final titles = ["Search geo", "Download archive"];
   final colors = [Colors.indigoAccent, Colors.teal];
   final icons = [Icons.search, Icons.download_sharp];
 
   @override
-  State createState() => _BottomNavBar();
+  State createState() => _MyApp();
 }
 
-class _BottomNavBar extends State<BottomNavBar> {
+class _MyApp extends State<MyApp> {
   PageController _pageController;
   MenuPositionController _menuPositionController;
   bool _userPageDragging = false;
